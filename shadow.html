@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --primary-color:brown;
+            --custom-width:330px;
+        }
+        .container{
+            background-color: beige;
+            height: 650px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 330px;
+            border: 1px solid var(--primary-color);
+            margin: 5px; padding: 5px ;
+            /* box-shadow: -10px -16px brown; */
+            /* box-shadow: 10px 16px 100px brown; */
+            box-shadow: 50px 60px 15px 40px  var(--primary-color);
+            /* box-shadow: inset 10px 16px 15px 30px brown; */
+            /* box-shadow: 10px 12px red , 15px 12px green , 20px 20px blue; */
+            /* box-shadow: inset 10px 12px red , 15px 12px green , 20px 20px blue; */
+        }
+        #head{
+            /* text-shadow: 2px 3px 4px brown; */
+            /* text-shadow: yellow 10px 20px 2px; */
+            /* text-shadow: white 10px 12px; */
+            /* text-shadow: 10px 12px; */
+            text-shadow: 3px 4px red , 6px 8px green , 9px 12px blue;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="img1.jpg" alt="img1" width="100px" height="100px">
+            <h2 id="head">welcome to my page</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dignissimos dolore incidunt expedita, excepturi provident earum eligendi odio culpa alias officia hic consequatur. Doloribus, quisquam!</p>
+        </div>
+    </div>
+    
+</body>
+</html>
